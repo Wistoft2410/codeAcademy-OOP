@@ -38,20 +38,15 @@ class Playlist {
 
         System.out.println("Nuværende September placering: " + desertIslandPlaylist.indexOf("September")+ "\n");
 
+        int a = desertIslandPlaylist.indexOf("Blåhimmel");
+        int b = desertIslandPlaylist.indexOf("September");
 
-        int indexA = desertIslandPlaylist.indexOf("September");
-        int indexB = desertIslandPlaylist.indexOf("Blåhimmel");
+        a = desertIslandPlaylist.indexOf("September");
+        b = desertIslandPlaylist.indexOf("Blåhimmel");
 
-        System.out.println("Nuværende playlist:     " + desertIslandPlaylist);
+        System.out.println("Ny Blåhimmel placering: " + desertIslandPlaylist.indexOf("Blåhimmel"));
 
-        String tempB = "Blåimmel";
-        String tempA = "September";
-        desertIslandPlaylist.set(indexA, tempB);
+        System.out.println("Ny September placering: " + desertIslandPlaylist.indexOf("September")+ "\n");
 
-        System.out.println("Opdateret B i playlist: " + desertIslandPlaylist);
-
-        desertIslandPlaylist.set(indexB, tempA);
-
-        System.out.println("Opdateret A i playlist: " + desertIslandPlaylist);
     }
 }

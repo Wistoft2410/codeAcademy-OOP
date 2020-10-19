@@ -1,13 +1,21 @@
-public class LuckyFive {
+// Importing the Random library
+import java.util.Random;
 
-    public static void main(String[] args){
-        int hedgehogs = 5;
+class LuckyFive {
 
-        // This will cause an infinite loop:
-        while (hedgehogs < 6) {
+    public static void main(String[] args) {
 
-            System.out.println("Not enough hedgehogs!");
+        // Creating a random number generator
+        Random randomGenerator = new Random();
+
+        // Generate a number between 1 and 6
+        int dieRoll = randomGenerator.nextInt(6) + 1;
+
+        // Repeat while roll isn't 5
+        while(dieRoll != 5 ){
 
         }
+
     }
+
 }
